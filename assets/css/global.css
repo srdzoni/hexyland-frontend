@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Recursive';
+  src: url('~assets/fonts/Recursive_VF_1.070.woff2') format('woff2-variations');
+  font-weight: 300 1000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --bg-color-primary: #fcf8e8;
+  --bg-color-secondary: #F6E6CE;
+  --bg-color-tertiary: #f8e0bc;
+  --bg-img: url("~assets/img/bg-light.png");
+
+  --text-color-primary: #3B2E2A;
+  --text-color-secondary: #5B4E4A;
+  --text-color-tertiary: #7B6E6A;
+
+  --link-color: #fe5f55;
+  --link-color-visited: #be4740;
+  --link-color-active: #be4740;
+  --link-color-hover: #ff897f;
+
+  --border-color-primary: #e5e5e5;
+  --border-color-secondary: #14213d;
+
+  --shadow-color: none;
+
+  --blog-post-font: 'Saira', sans-serif;
+  --blog-post-font-weight: 500;
+}
+
+.dark-mode {
+
+  --bg-color-primary: #222831;
+  --bg-color-secondary: #30475e;
+  --bg-color-tertiary: #45576e;
+  --bg-img: url("~assets/img/bg-dark.png");
+
+  --text-color-primary: #e8e8e8;
+  --text-color-secondary: #cccccc;
+  --text-color-tertiary: #7B6E6A;
+
+  --link-color: #f05454;
+  --link-color-visited: #e04343;
+  --link-color-active: #e04343;
+  --link-color-hover: #f05454;
+
+  --border-color-primary: #e5e5e5;
+  --border-color-secondary: #14213d;
+
+  --shadow-color: #000000;
+
+  --blog-post-font: 'Saira', sans-serif;
+  --blog-post-font-weight: 350;
+}
+
+html {
+  font-family: 'Recursive', Verdana, sans-serif;
+  font-variation-settings: 'CRSV' 0;
+}
+
+body {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-primary);
+  /*background-color: #222831;*/
+  /*color: #dddddd;*/
+  transition: background-color ease-in .3s;
+}
+
+a:link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--link-color-visited);
+  /*color: #d14949;*/
+}
+a:hover,
+a:visited:hover {
+  color: var(--link-color-hover);
+  /* border-bottom: 1px solid #dddddd; */
+}
+a:active,
+a:visited:active {
+  color: var(--link-color-hover);
+  border-bottom: 1px;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: 0px 0px 12px var(--shadow-color);
+}
+
+h4 {
+  text-shadow: 0px 0px 5px var(--shadow-color);
+}
+
+h4:hover {
+  color: var(--text-color-secondary);
+}
+
+.content {
+  width: 1000px;
+  margin-top: 50px;
+  position: relative;
+  font-variation-settings: "CASL" 0.5;
+  font-variation-settings: "MONO" 0.4;
+}
